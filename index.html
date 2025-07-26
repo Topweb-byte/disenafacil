@@ -11,15 +11,15 @@
             box-sizing: border-box;
         }
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #2563eb, #1e40af);
             color: white;
             line-height: 1.6;
+            padding: 20px;
         }
         .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
             text-align: center;
         }
         header {
@@ -66,6 +66,7 @@
             display: inline-block;
             transition: transform 0.3s;
             margin: 10px;
+            cursor: pointer;
         }
         .cta-button:hover {
             transform: scale(1.05);
@@ -92,6 +93,16 @@
             margin-top: 50px;
             font-size: 0.9rem;
             opacity: 0.7;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .cta-button {
+                display: block;
+                margin: 10px auto;
+                width: 80%;
+            }
         }
     </style>
 </head>
@@ -143,3 +154,24 @@
             <p style="color: #fbbf24; font-weight: bold;"><strong>Importe:</strong> 47€</p>
             <p>📧 <strong>Envía comprobante a:</strong> hola@disenafacil.com</p>
             <p>
+                Después de realizar la transferencia, recibirás un correo de confirmación con el acceso al curso en un plazo máximo de 24 horas.
+            </p>
+        </div>
+
+        <div id="gratis" class="payment-info">
+            <h3>🎁 Obtén tu Ebook GRATIS</h3>
+            <p>Introduce tu email para recibir inmediatamente el ebook "5 Errores Comunes en Diseño Web" (valor: €17)</p>
+            <form style="margin-top: 20px;">
+                <input type="email" placeholder="Tu email" style="padding: 10px; width: 70%; border-radius: 5px; border: none; margin-bottom: 10px;">
+                <br>
+                <button type="submit" class="cta-button" style="background: #10b981; padding: 10px 20px; font-size: 1rem;">📥 DESCARGAR GRATIS</button>
+            </form>
+        </div>
+
+        <footer>
+            <p>© 2023 Diseña Fácil. Todos los derechos reservados.</p>
+            <p>hola@disenafacil.com</p>
+        </footer>
+    </div>
+</body>
+</html>
