@@ -65,6 +65,7 @@
             text-decoration: none;
             display: inline-block;
             transition: transform 0.3s;
+            margin: 10px;
         }
         .cta-button:hover {
             transform: scale(1.05);
@@ -72,6 +73,19 @@
         .price {
             font-size: 2rem;
             font-weight: bold;
+            margin: 20px 0;
+        }
+        .payment-info {
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 30px 0;
+            text-align: left;
+        }
+        .guarantee {
+            background: rgba(16, 185, 129, 0.2);
+            padding: 15px;
+            border-radius: 10px;
             margin: 20px 0;
         }
         footer {
@@ -109,14 +123,23 @@
 
         <div class="price">€47 <span style="font-size: 1rem; text-decoration: line-through;">€97</span></div>
 
-        <div class="cta-section">
-            <a href="https://designsoul4.gumroad.com" class="cta-button">¡ACCEDER AL CURSO AHORA!</a>
-            <p style="margin-top: 15px;">Incluye garantía de satisfacción de 30 días</p>
+        <div class="guarantee">
+            <strong>💯 Garantía de satisfacción de 30 días</strong>
+            <p>Si no estás satisfecho, te devuelvo tu dinero sin preguntas</p>
         </div>
 
-        <footer>
-            <p>© 2023 Diseña Fácil - Todos los derechos reservados</p>
-        </footer>
-    </div>
-</body>
-</html>
+        <div class="cta-section">
+            <a href="#payment" class="cta-button">📥 COMPRAR AHORA</a>
+            <a href="#gratis" class="cta-button" style="background: #64748b;">🎁 Ebook GRATIS</a>
+        </div>
+
+        <div id="payment" class="payment-info">
+            <h3>💳 Cómo realizar el pago:</h3>
+            <p><strong>Transferencia bancaria directa:</strong></p>
+            <p><strong>Titular:</strong> David Olmo Escribano</p>
+            <p><strong>IBAN:</strong> ES58 2100 3447 7622 0032 3458</p>
+            <p><strong>Banco:</strong> CaixaBank</p>
+            <p><strong>Concepto:</strong> Curso Diseño Fácil</p>
+            <p style="color: #fbbf24; font-weight: bold;"><strong>Importe:</strong> 47€</p>
+            <p>📧 <strong>Envía comprobante a:</strong> hola@disenafacil.com</p>
+            <p>
