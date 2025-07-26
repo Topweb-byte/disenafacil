@@ -3,37 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diseña Fácil - Curso de Diseño</title>
+    <title>Diseña Fácil - Curso de Diseño para Novatos</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background: #2563eb;
+            background: linear-gradient(135deg, #2563eb, #1e40af);
             color: white;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
             text-align: center;
-            height: 100vh;
+        }
+        header {
+            padding: 30px 0;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        .benefits {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 30px 0;
+            text-align: left;
+        }
+        .benefit-item {
+            padding: 10px 0;
             display: flex;
             align-items: center;
-            justify-content: center;
+            gap: 10px;
+        }
+        .check {
+            color: #fbbf24;
+            font-size: 1.5rem;
+        }
+        .cta-section {
+            margin: 40px 0;
         }
         .cta-button {
             background: #f59e0b;
             color: #1e293b;
-            padding: 15px 30px;
+            padding: 15px 40px;
             border: none;
             border-radius: 50px;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             font-weight: bold;
             text-decoration: none;
             display: inline-block;
+            transition: transform 0.3s;
+        }
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+        .price {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        footer {
+            margin-top: 50px;
+            font-size: 0.9rem;
+            opacity: 0.7;
         }
     </style>
 </head>
 <body>
-    <div>
-        <h1>🎨 Diseña Fácil</h1>
-        <a href="https://designsoul4.gumroad.com/l/nombredelcurso" class="cta-button">¡Empieza GRATIS ahora!</a>
+    <div class="container">
+        <header>
+            <h1>🎨 Diseña Fácil</h1>
+            <p class="subtitle">Aprende diseño profesional sin Photoshop en solo 7 días</p>
+        </header>
+
+        <div class="benefits">
+            <div class="benefit-item">
+                <span class="check">✓</span>
+                <span>Sin necesidad de Photoshop o Illustrator</span>
+            </div>
+            <div class="benefit-item">
+                <span class="check">✓</span>
+                <span>Curso práctico de 7 días por email</span>
+            </div>
+            <div class="benefit-item">
+                <span class="check">✓</span>
+                <span>25 plantillas profesionales incluidas</span>
+            </div>
+            <div class="benefit-item">
+                <span class="check">✓</span>
+                <span>Sin inversión inicial requerida</span>
+            </div>
+        </div>
+
+        <div class="price">€47 <span style="font-size: 1rem; text-decoration: line-through;">€97</span></div>
+
+        <div class="cta-section">
+            <a href="https://designsoul4.gumroad.com" class="cta-button">¡ACCEDER AL CURSO AHORA!</a>
+            <p style="margin-top: 15px;">Incluye garantía de satisfacción de 30 días</p>
+        </div>
+
+        <footer>
+            <p>© 2023 Diseña Fácil - Todos los derechos reservados</p>
+        </footer>
     </div>
 </body>
 </html>
