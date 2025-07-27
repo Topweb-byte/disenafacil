@@ -4,104 +4,183 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diseña Fácil - Curso de Diseño para Novatos</title>
-    <sty
+    <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #2563eb, #1e40af);
-            color: white;
+            background: linear-gradient(135deg, #1a2a6c, #2a5298);
+            color: #ffffff;
             line-height: 1.6;
+            min-height: 100vh;
             padding: 20px;
+            background-attachment: fixed;
         }
+
         .container {
             max-width: 800px;
             margin: 0 auto;
             text-align: center;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(5px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
+
         header {
-            padding: 30px 0;
+            padding: 20px 0 30px 0;
         }
+
         h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(to right, #ffd700, #ffa500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
+
         .subtitle {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.95;
+            font-weight: 500;
         }
+
         .benefits {
-            background: rgba(255,255,255,0.1);
-            padding: 20px;
+            background: rgba(255, 255, 255, 0.12);
+            padding: 25px;
             border-radius: 15px;
             margin: 30px 0;
             text-align: left;
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
         }
+
         .benefit-item {
-            padding: 10px 0;
+            padding: 12px 0;
             display: flex;
-            align-items: center;
-            gap: 10px;
+            align-items: flex-start;
+            gap: 12px;
         }
+
         .check {
-            color: #fbbf24;
-            font-size: 1.5rem;
+            color: #4ade80;
+            font-size: 1.4rem;
+            flex-shrink: 0;
         }
+
         .cta-section {
             margin: 40px 0;
         }
+
         .cta-button {
-            background: #f59e0b;
+            background: linear-gradient(135deg, #f59e0b, #d97706);
             color: #1e293b;
-            padding: 15px 40px;
+            padding: 16px 45px;
             border: none;
             border-radius: 50px;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             font-weight: bold;
             text-decoration: none;
             display: inline-block;
-            transition: transform 0.3s;
-            margin: 10px;
+            transition: all 0.3s ease;
+            margin: 12px;
             cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
+
         .cta-button:hover {
-            transform: scale(1.05);
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
         }
-        .price {
-            font-size: 2rem;
+
+        .price-section {
+             margin: 30px 0;
+             padding: 20px;
+        }
+        .price-old {
+            font-size: 1.4rem;
+            text-decoration: line-through;
+            color: #ffa500;
+            margin-bottom: 5px;
+        }
+        .price-new {
+            font-size: 2.8rem;
             font-weight: bold;
-            margin: 20px 0;
+            color: #4ade80;
+            margin: 10px 0;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
         }
-        .payment-info {
-            background: rgba(255,255,255,0.2);
-            padding: 20px;
+        .price-label {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .savings {
+            background: rgba(245, 158, 11, 0.2);
+            color: #fbbf24;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+            border: 1px solid rgba(251, 191, 36, 0.3);
+        }
+
+        .payment-info, .gratis-info {
+            background: rgba(255, 255, 255, 0.12);
+            padding: 25px;
             border-radius: 15px;
-            margin: 30px 0;
+            margin: 35px 0;
             text-align: left;
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
         }
-        .guarantee {
-            background: rgba(16, 185, 129, 0.2);
-            padding: 15px;
-            border-radius: 10px;
-            margin: 20px 0;
+
+        .payment-info h3, .gratis-info h3 {
+            margin-bottom: 15px;
+            color: #fbbf24;
         }
+
+        .mailto-link {
+            color: #60a5fa;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+        .mailto-link:hover {
+            color: #93c5fd;
+        }
+
         footer {
             margin-top: 50px;
             font-size: 0.9rem;
-            opacity: 0.7;
+            opacity: 0.75;
         }
-        @media (max-width: 600px) {
+
+        @media (max-width: 650px) {
             h1 {
-                font-size: 2rem;
+                font-size: 2.2rem;
+            }
+            .subtitle {
+                font-size: 1.1rem;
             }
             .cta-button {
                 display: block;
-                margin: 10px auto;
-                width: 80%;
+                margin: 12px auto;
+                width: 90%;
+                padding: 14px 20px;
+            }
+            .container {
+                padding: 20px 15px;
+            }
+            .price-new {
+                font-size: 2.3rem;
             }
         }
     </style>
@@ -110,7 +189,7 @@
     <div class="container">
         <header>
             <h1>🎨 Diseña Fácil</h1>
-            <p class="subtitle">Aprende diseño profesional sin Photoshop en solo 7 días</p>
+            <p class="subtitle">Curso intensivo 7 días online: De novato a profesional</p>
         </header>
 
         <div class="benefits">
@@ -120,7 +199,7 @@
             </div>
             <div class="benefit-item">
                 <span class="check">✓</span>
-                <span>Curso práctico de 7 días por email</span>
+                <span>Aprende diseño web práctico paso a paso</span>
             </div>
             <div class="benefit-item">
                 <span class="check">✓</span>
@@ -128,49 +207,51 @@
             </div>
             <div class="benefit-item">
                 <span class="check">✓</span>
-                <span>Sin inversión inicial requerida</span>
+                <span>Acceso de por vida al contenido</span>
             </div>
         </div>
 
-        <div class="price">€47 <span style="font-size: 1rem; text-decoration: line-through;">€97</span></div>
-
-        <div class="guarantee">
-            <strong>💯 Garantía de satisfacción de 30 días</strong>
-            <p>Si no estás satisfecho, te devuelvo tu dinero sin preguntas</p>
+        <div class="price-section">
+            <div class="price-old">ANTES 117,98€</div>
+            <div class="price-new">AHORA 57,99€</div>
+            <div class="price-label">Acceso completo al curso</div>
+            <div class="savings">AHORRA 51%</div>
         </div>
 
         <div class="cta-section">
-            <a href="#payment" class="cta-button">📥 COMPRAR AHORA</a>
-            <a href="#gratis" class="cta-button" style="background: #64748b;">🎁 Ebook GRATIS</a>
+            <a href="mailto:disenosweb359@gmail.com?subject=Inscripción%20Curso%20Diseña%20Fácil&body=Hola,%20estoy%20interesado%20en%20el%20curso%20Diseña%20Fácil%20(57,99€).%20Por%20favor,%20envíame%20la%20información%20para%20realizar%20el%20pago." class="cta-button">📥 INSCRIBIRME AHORA</a>
+            <a href="#gratis" class="cta-button" style="background: linear-gradient(135deg, #64748b, #475569);">🎁 Ebook GRATIS</a>
         </div>
 
         <div id="payment" class="payment-info">
-            <h3>💳 Cómo realizar el pago:</h3>
-            <p><strong>Transferencia bancaria directa:</strong></p>
-            <p><strong>Titular:</strong> David Olmo Escribano</p>
-            <p><strong>IBAN:</strong> ES58 2100 3447 7622 0032 3458</p>
-            <p><strong>Banco:</strong> CaixaBank</p>
-            <p><strong>Concepto:</strong> Curso Diseño Fácil</p>
-            <p style="color: #fbbf24; font-weight: bold;"><strong>Importe:</strong> 47€</p>
-            <p>📧 <strong>Envía comprobante a:</strong> hola@disenafacil.com</p>
-            <p>
-                Después de realizar la transferencia, recibirás un correo de confirmación con el acceso al curso en un plazo máximo de 24 horas.
+            <h3>💳 Proceso de Inscripción</h3>
+            <ol style="margin-left: 20px; margin-bottom: 15px;">
+                <li>Haz clic en "<a href="mailto:disenosweb359@gmail.com?subject=Inscripción%20Curso%20Diseña%20Fácil&body=Hola,%20estoy%20interesado%20en%20el%20curso%20Diseña%20Fácil%20(57,99€).%20Por%20favor,%20envíame%20la%20información%20para%20realizar%20el%20pago." class="mailto-link">INSCRIBIRME AHORA</a>" (se abrirá tu correo).</li>
+                <li>Envíanos un correo expresando tu interés en el curso por 57,99€.</li>
+                <li>Recibirás la confirmación con las instrucciones de pago y acceso inmediato al curso.</li>
+            </ol>
+            <p><strong>Importe:</strong> 57,99€ (Pago único)</p>
+            <p>📧 ¿Dudas? Contáctanos: <a href="mailto:disenosweb359@gmail.com" class="mailto-link">disenosweb359@gmail.com</a></p>
+            <p style="margin-top: 15px; font-style: italic;">
+                Acceso de por vida. Soporte personalizado incluido.
             </p>
         </div>
 
-        <div id="gratis" class="payment-info">
-            <h3>🎁 Obtén tu Ebook GRATIS</h3>
-            <p>Introduce tu email para recibir inmediatamente el ebook "5 Errores Comunes en Diseño Web" (valor: €17)</p>
-            <form style="margin-top: 20px;">
-                <input type="email" placeholder="Tu email" style="padding: 10px; width: 70%; border-radius: 5px; border: none; margin-bottom: 10px;">
+        <div id="gratis" class="gratis-info">
+            <h3>🎁 Ebook de Bienvenida</h3>
+            <p>Como muestra de nuestro compromiso, queremos enviarte este ebook gratuito:</p>
+            <p style="font-weight: bold; font-size: 1.1em; margin: 15px 0;">"5 Errores Comunes en Diseño Web"</p>
+            <p>Un pequeño regalo nuestro para ayudarte a empezar.</p>
+            <form style="margin-top: 20px;" action="mailto:disenosweb359@gmail.com?subject=Ebook%20Bienvenida%20-%20Diseña%20Fácil&body=Hola%20equipo%20de%20Diseña%20Fácil,%0A%0AMe%20gustaría%20recibir%20el%20ebook%20gratis:%20'5%20Errores%20Comunes%20en%20Diseño%20Web'.%0A%0AGracias!" method="post" enctype="text/plain">
+                <input type="email" name="email" placeholder="Tu email" style="padding: 12px; width: 70%; border-radius: 5px; border: 1px solid #ccc; margin-bottom: 12px;" required>
                 <br>
-                <button type="submit" class="cta-button" style="background: #10b981; padding: 10px 20px; font-size: 1rem;">📥 DESCARGAR GRATIS</button>
+                <button type="submit" class="cta-button" style="background: linear-gradient(135deg, #10b981, #059669); padding: 12px 25px; font-size: 1.1rem; margin: 5px 0;">📥 Recibir Ebook</button>
             </form>
         </div>
 
         <footer>
             <p>© 2023 Diseña Fácil. Todos los derechos reservados.</p>
-            <p>hola@disenafacil.com</p>
+            <p>Correo: <a href="mailto:disenosweb359@gmail.com" class="mailto-link">disenosweb359@gmail.com</a></p>
         </footer>
     </div>
 </body>
